@@ -6,9 +6,6 @@
 
 get_header(); ?>
 
-		<section id="primary" role="region">
-			<div id="content">
-
 				<header class="page-header">
 					<h1 class="page-title"><?php
 						printf( __( 'Category Archives: %s', 'webtonio' ), '<span>' . single_cat_title( '', false ) . '</span>' );
@@ -19,8 +16,5 @@ get_header(); ?>
 
 				<?php get_template_part( 'loop', 'category' ); ?>
 
-			</div><!-- #content -->
-		</section><!-- #primary -->
-
-<?php get_sidebar(); ?>
+		
 <?php get_footer(); ?>

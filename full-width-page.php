@@ -9,9 +9,7 @@
 
 get_header(); ?>
 
-		<div id="primary" class="full-width">
-			<div id="content">
-
+	
 				<?php the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
@@ -27,8 +25,5 @@ get_header(); ?>
 				</article><!-- #post-<?php the_ID(); ?> -->
 
 				<?php comments_template( '', true ); ?>
-
-			</div><!-- #content -->
-		</div><!-- #primary -->
 
 <?php get_footer(); ?>

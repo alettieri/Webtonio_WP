@@ -6,8 +6,6 @@
 
 get_header(); ?>
 
-	<div id="primary">
-		<div id="content">
 
 			<article id="post-0" class="post error404 not-found" role="article">
 				<header class="entry-header">
@@ -37,8 +35,5 @@ get_header(); ?>
 
 				</div><!-- .entry-content -->
 			</article><!-- #post-0 -->
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
 
 <?php get_footer(); ?>

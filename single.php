@@ -6,8 +6,7 @@
 
 get_header(); ?>
 
-		<div id="primary">
-			<div id="content">
+	
 
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -69,10 +68,5 @@ get_header(); ?>
 
 				<?php comments_template( '', true ); ?>
 
-			<?php endwhile; // end of the loop. ?>
-
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+		
 <?php get_footer(); ?>

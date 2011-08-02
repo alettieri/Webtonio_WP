@@ -6,8 +6,6 @@
 
 get_header(); ?>
 
-		<section id="primary" role="region">
-			<div id="content">
 
 				<?php the_post(); ?>
 
@@ -19,8 +17,4 @@ get_header(); ?>
 
 				<?php get_template_part( 'loop', 'author' ); ?>
 
-			</div><!-- #content -->
-		</section><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

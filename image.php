@@ -6,9 +6,7 @@
 
 get_header(); ?>
 
-		<div id="primary" class="image-attachment">
-			<div id="content">
-
+	
 			<?php the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
@@ -99,7 +97,5 @@ get_header(); ?>
 
 				<?php comments_template(); ?>
 
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
+		
 <?php get_footer(); ?>

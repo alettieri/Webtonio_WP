@@ -41,7 +41,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
+  	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/editor-styles.css" type="text/css" />   
+ 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
 
 	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -51,10 +52,10 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
-	<div id="page" class="hfeed">
-		<header id="branding" role="banner">
+	<div id="page-wrap">
+		<header>
 				<hgroup>
-					<h1 id="site-title">
+					<h1>
 						<span>
 							<a href="<?php echo home_url( '/' ); ?>" 
 							   title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
@@ -62,15 +63,15 @@
 							</a>
 						</span>
 					</h1>
-					<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+					<h2 class="visuallyhidden"><?php bloginfo( 'description' ); ?></h2>
 				</hgroup>
 				
-				<nav id="access" role="article">
-					<h1 class="section-heading"><?php _e( 'Main menu', 'webtonio' ); ?></h1>
-					<div class="skip-link visuallyhidden"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'webtonio' ); ?>"><?php _e( 'Skip to content', 'webtonio' ); ?></a></div>
+				<nav>
+					<h1 class="visuallyhidden"><?php _e( 'Main menu', 'webtonio' ); ?></h1>
+					<div class="skip-link visuallyhidden">
+						<a href="#content" title="<?php esc_attr_e( 'Skip to content', 'webtonio' ); ?>"><?php _e( 'Skip to content', 'webtonio' ); ?></a>
+					</div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</nav><!-- #access -->
 		</header><!-- #branding -->
-	
-	
 		<div id="main">

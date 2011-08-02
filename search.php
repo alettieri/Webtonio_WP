@@ -6,9 +6,7 @@
 
 get_header(); ?>
 
-		<section id="primary" role="region">
-			<div id="content">
-
+	
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
@@ -32,8 +30,5 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			</div><!-- #content -->
-		</section><!-- #primary -->
-
-<?php get_sidebar(); ?>
+		
 <?php get_footer(); ?>
